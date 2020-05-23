@@ -8,7 +8,7 @@ export const siteTitle = 'SYD // NYC // LDN'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -27,12 +27,7 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            
           </>
         ) : (
           <>
@@ -53,7 +48,9 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <main>{children}</main>
+      
+      <main className={styles.container}>{children}</main>
+      
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
@@ -61,6 +58,6 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
-    </div>
+    </>
   )
 }
