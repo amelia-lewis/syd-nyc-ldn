@@ -3,7 +3,7 @@ import utilStyles from '../styles/utils.module.css'
 import Clock from 'react-live-clock';
 import moment from 'moment-timezone';
 
-export default function City({ name, timezone }) {  
+export default function City({ name, timezone }) {    
   var hour = moment().tz(timezone).format('HH');
   var bgColor;
   var textColor;
