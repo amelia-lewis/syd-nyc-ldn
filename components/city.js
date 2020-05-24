@@ -1,5 +1,4 @@
 import styles from './city.module.css'
-import utilStyles from '../styles/utils.module.css'
 import Clock from 'react-live-clock';
 import moment from 'moment-timezone';
 
@@ -8,11 +7,17 @@ export default function City({ name, timezone }) {
   var bgColor;
   var textColor;
 
-  if (hour < 9 || hour > 22) {
-    bgColor = "var(--color-night)";
+  if (hour < 7) {
+    bgColor = "var(--color-midnight)";
     textColor = "white";
-  } else if (hour > 18 && hour < 22) {
+  } else if (hour >= 7 && hour < 9) {
     bgColor = "var(--color-evening)";
+    textColor = "white";
+  } else if (hour >= 18 && hour < 22) {
+    bgColor = "var(--color-evening)";
+    textColor = "white";
+  }  else if (hour >= 22) {
+    bgColor = "var(--color-night)";
     textColor = "white";
   } else {
     bgColor = "var(--color-day)";
