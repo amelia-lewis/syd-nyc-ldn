@@ -4,11 +4,9 @@
   align-items: flex-start;
   justify-content: space-between;
   flex-grow: 1;
-  background: white;
-  color: var(--color-primary);
+  background: var(--color-night);
+  color: white;
   padding: 2rem;
-  box-shadow: 0 4px 20px rgba(var(--color-primary-rgb), 0.05);
-  border-radius: 16px;;
 }
 
 .name {
@@ -38,4 +36,17 @@
   font-size: 1.5rem;
   font-weight: 400;
   margin: 0;
+}
+
+.night {
+  background: var(--color-night);
+}
+
+.evening {
+  background: var(--color-evening);
+}
+
+.day {
+  background: var(--color-day);
+  color: var(--color-night);
 }

@@ -5,6 +5,9 @@
   --color-primary: #4186EF;
   --color-primary-rgb: 65, 134, 239;
   --color-light: #FBFCFF;
+  --color-night: #2B2D42;
+  --color-evening: #8D99AE;
+  --color-day: #F4E8C1;
 }
 
 
@@ -24,18 +27,4 @@ body {
 
 * {
   box-sizing: border-box;
-}
-
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }
