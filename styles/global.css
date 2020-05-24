@@ -5,6 +5,7 @@
   --color-primary: #4186EF;
   --color-primary-rgb: 65, 134, 239;
   --color-light: #FBFCFF;
+  --color-midnight: #000000;
   --color-night: #2B2D42;
   --color-evening: #8D99AE;
   --color-day: #F4E8C1;
@@ -27,4 +28,8 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  color: inherit;
 }
