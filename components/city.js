@@ -11,7 +11,7 @@ export default function City({ name, timezone }) {
     bgColor = "var(--color-midnight)";
     textColor = "white";
   } else if (hour >= 7 && hour < 9) {
-    bgColor = "var(--color-evening)";
+    bgColor = "var(--color-morning)";
     textColor = "white";
   } else if (hour >= 18 && hour < 22) {
     bgColor = "var(--color-evening)";
