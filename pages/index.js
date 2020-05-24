@@ -23,17 +23,17 @@ export default function Home () {
       </Head>
       
       <City
-        name="Sydney"
+        name="SYD"
         timezone="Australia/Sydney"
       />
       
       <City
-        name="New York City"
+        name="NYC"
         timezone="US/Eastern"
       />
       
       <City
-        name="London"
+        name="LDN"
         timezone="Europe/London"
       />
     </Layout>

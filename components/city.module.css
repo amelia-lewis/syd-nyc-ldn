@@ -1,8 +1,41 @@
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
   flex-grow: 1;
-  background: #f6f6f6;
+  background: white;
+  color: var(--color-primary);
   padding: 2rem;
+  box-shadow: 0 4px 20px rgba(var(--color-primary-rgb), 0.05);
+  border-radius: 16px;;
+}
+
+.name {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0;
+  opacity: 0.3;
+}
+
+.timeContainer {
+  display: flex;
+  align-items: baseline;
+}
+
+.time {
+  font-size: 12rem;
+  font-weight: 200;
+}
+
+.meridiem {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.date {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
 }
