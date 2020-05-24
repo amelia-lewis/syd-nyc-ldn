@@ -21,9 +21,21 @@ export default function Home () {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <City name="Sydney" />
-      <City name="New York City" />
-      <City name="London" />
+      
+      <City
+        name="Sydney"
+        timezone="Australia/Sydney"
+      />
+      
+      <City
+        name="New York City"
+        timezone="US/Eastern"
+      />
+      
+      <City
+        name="London"
+        timezone="Europe/London"
+      />
     </Layout>
   )
 }
