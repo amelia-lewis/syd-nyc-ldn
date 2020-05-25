@@ -20,7 +20,7 @@ export default function Layout({ children, home }) {
       <main className={styles.container}>{children}</main>
 
       <div className={styles.footer}>
-        <p>Made with &hearts; and <a href="https://nextjs.org/">Next.js</a> by Amelia Lewis</p>
+        <p>Made with &hearts; and <a href="https://nextjs.org/" target="_blank">Next.js</a> by <a href="https://amelia.design/" target="_blank">Amelia Lewis</a></p>
       </div>
     </>
   )
