@@ -34,7 +34,3 @@ body {
 a {
   color: inherit;
 }
-
-a:hover {
-  text-decoration: underline wavy;
-}
