@@ -16,6 +16,13 @@
   opacity: 0.3;
 }
 
+.timezone {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  opacity: 0.3;
+}
+
 .timeContainer {
   display: flex;
   align-items: baseline;

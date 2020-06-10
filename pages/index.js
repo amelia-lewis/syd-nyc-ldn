@@ -11,11 +11,6 @@ export default function Home () {
       </Head>
       
       <City
-        name="SYD"
-        timezone="Australia/Sydney"
-      />
-      
-      <City
         name="NYC"
         timezone="US/Eastern"
       />
@@ -24,6 +19,12 @@ export default function Home () {
         name="LDN"
         timezone="Europe/London"
       />
+      
+      <City
+        name="SYD"
+        timezone="Australia/Sydney"
+      />
+      
     </Layout>
   )
 }

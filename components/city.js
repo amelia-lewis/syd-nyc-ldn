@@ -26,7 +26,14 @@ export default function City({ name, timezone }) {
   
   return (
     <div className={styles.card} style={{backgroundColor: bgColor, color: textColor}}>
-      <h2 className={styles.name}>{name}</h2>
+      <div>
+        <h2 className={styles.name}>{name}</h2>
+        <Clock
+          className={styles.timezone}
+          format={'zz UTC Z'}
+          ticking={true}
+          timezone={timezone} />
+      </div>
 
       <div className={styles.timeContainer}>
         <Clock
